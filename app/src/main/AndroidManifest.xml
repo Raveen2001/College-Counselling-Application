@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.collegecounsellingapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kec_logo_without_text"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollegeCounsellingApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.ShowResultsActivity"></activity>
+        <activity android:name=".activities.EditCollegeActivity" />
+        <activity android:name=".activities.CreateCollegeActivity" />
+        <activity android:name=".activities.DashboardAdminActivity" />
+        <activity android:name=".activities.ViewMark" />
+        <activity android:name=".activities.ConfirmListSubmissionActivity" />
+        <activity android:name=".activities.AddCollegeStudent" />
+        <activity android:name=".activities.GetDetailsActivity" />
+        <activity android:name=".activities.DashboardStudentActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity" />
+    </application>
+
+</manifest>
